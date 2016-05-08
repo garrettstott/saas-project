@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.6'
+gem 'devise'
+gem 'milia'
 gem 'pg', '~> 0.15'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -22,3 +24,6 @@ group :production do
   gem 'puma'
 end
 
+
+gem 'recaptcha', require: 'recaptcha/rails'
+gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
