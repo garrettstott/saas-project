@@ -7,6 +7,7 @@ gem 'pg', '~> 0.15'
 gem 'sass-rails', '~> 5.0'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
+gem 'bootstrap-datepicker-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
@@ -21,7 +22,7 @@ group :development do
   gem 'spring'
 end
 
-group :production do 
+group :production do
   gem 'rails_12factor'
   gem 'puma'
 end

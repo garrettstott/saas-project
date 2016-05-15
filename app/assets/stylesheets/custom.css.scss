@@ -63,15 +63,10 @@
 }
 
 .features {
-
-ul {
-
-margin-left: 0;
-
-padding-left: 15px;
-
-}
-
+  ul {
+    margin-left: 0;
+    padding-left: 15px;
+  }
 }
 
 .jumbotron {
@@ -126,4 +121,13 @@ padding-left: 15px;
 
 .no-right-padding {
   right-padding: 0 !important;
+}
+
+.table tr td {
+  a.main-link {
+    color: #428bca;
+  }
+  a.main-link:hover {
+    background: none;
+  }
 }
