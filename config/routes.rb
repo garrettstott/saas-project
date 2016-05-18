@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :tenants do
     resources :projects do
       get 'users', on: :member
-      put 'add_user', on: :member 
+      put 'add_user', on: :member
     end
   end
 
@@ -17,7 +17,7 @@ Rails.application.routes.draw do
 
   # *MUST* come *BEFORE* devise's definitions (below)
   as :user do
-    match '/user/confirmation' => 'confirmations#update', :via => :put, :as => :update_user_confirmation
+    match 'user/confirmation' => 'confirmations#update', :via => :put, :as => :update_user_confirmation
   end
 
   devise_for :users, :controllers => {
